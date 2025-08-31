@@ -133,20 +133,33 @@ All colors MUST be HSL.
   /* Portfolio specific components */
   .hero-button {
     @apply bg-gradient-to-r from-primary to-primary-hover text-primary-foreground px-8 py-4 rounded-lg font-semibold;
-    @apply shadow-hero transition-all duration-300 hover:shadow-card-hover hover:scale-105;
-    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    @apply transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    box-shadow: var(--shadow-hero);
+  }
+  
+  .hero-button:hover {
+    box-shadow: var(--shadow-card-hover);
   }
   
   .accent-button {
     @apply bg-gradient-to-r from-accent-red to-accent-red-hover text-accent-red-foreground px-6 py-3 rounded-lg font-medium;
-    @apply shadow-card transition-all duration-300 hover:shadow-card-hover hover:scale-105;
-    @apply focus:outline-none focus:ring-2 focus:ring-accent-red focus:ring-offset-2;
+    @apply transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent-red focus:ring-offset-2;
+    box-shadow: var(--shadow-card);
+  }
+  
+  .accent-button:hover {
+    box-shadow: var(--shadow-card-hover);
   }
   
   .portfolio-card {
     @apply bg-card border border-card-border rounded-xl p-6;
-    @apply shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1;
+    @apply transition-all duration-300 hover:-translate-y-1;
     background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+  
+  .portfolio-card:hover {
+    box-shadow: var(--shadow-card-hover);
   }
   
   .skill-tag {
