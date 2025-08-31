@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github } from 'lucide-react';
 import ecommerceImg from '@/assets/project-ecommerce.jpg';
 import bookstoreImg from '@/assets/project-bookstore.jpg';
@@ -5,59 +6,59 @@ import bookstoreImg from '@/assets/project-bookstore.jpg';
 const Projects = () => {
   const projects = [
     {
-      title: "Lighthearted Lollipop",
-      description: "Modern e-commerce platform built with React and advanced UI/UX design principles.",
+      title: "Pressure Wash Business Website",
+      description: "Professional pressure washing service website featuring service showcases, booking system, and customer testimonials with modern responsive design.",
       image: ecommerceImg,
-      technologies: ["React", "TypeScript", "Tailwind", "E-commerce"],
-      liveUrl: "#",
+      technologies: ["React", "TypeScript", "Responsive Design", "Service Business"],
+      liveUrl: "https://lighthearted-lollipop-5aeb49.netlify.app/",
       githubUrl: "#"
     },
     {
       title: "Bookstore Client MERN",
-      description: "Full-stack bookstore application using MongoDB, Express, React, and Node.js stack.",
+      description: "Full-stack bookstore application built with MERN stack featuring book catalog, user authentication, shopping cart, and inventory management.",
       image: bookstoreImg,
       technologies: ["MERN", "MongoDB", "Express", "React", "Node.js"],
-      liveUrl: "#",
+      liveUrl: "https://bookstore-client-mern.netlify.app/",
       githubUrl: "#"
     },
     {
       title: "Bookstore 2 Client",
-      description: "Enhanced version of the bookstore with improved features and modern design.",
+      description: "Enhanced bookstore platform with improved UI/UX, advanced search functionality, and optimized performance for better user experience.",
       image: bookstoreImg,
       technologies: ["React", "API Integration", "Modern UI", "Performance"],
-      liveUrl: "#",
+      liveUrl: "https://bookstore2-client.netlify.app/",
       githubUrl: "#"
     },
     {
-      title: "Laundry Website",
-      description: "Professional service website for laundry business with booking functionality.",
+      title: "Laundry Service Website",
+      description: "Professional laundry and dry cleaning service website with online booking, service pricing, pickup/delivery scheduling, and customer portal.",
       image: ecommerceImg,
-      technologies: ["React", "Booking System", "Business Website"],
-      liveUrl: "#",
+      technologies: ["React", "Booking System", "Service Business", "Scheduling"],
+      liveUrl: "https://laundrysite-web.netlify.app/",
       githubUrl: "#"
     },
     {
       title: "Paisley Jewels",
-      description: "Elegant jewelry showcase website with product galleries and e-commerce features.",
+      description: "Elegant jewelry e-commerce store featuring product catalogs, secure payment integration, and sophisticated design for luxury brand experience.",
       image: ecommerceImg,
-      technologies: ["React", "E-commerce", "Product Gallery", "Responsive"],
-      liveUrl: "#",
+      technologies: ["React", "E-commerce", "Payment Integration", "Luxury Design"],
+      liveUrl: "https://paisleyjewels.store/",
       githubUrl: "#"
     },
     {
       title: "Mexivida USA",
-      description: "Corporate website for health and wellness company with modern design.",
+      description: "Corporate health and wellness company website showcasing products, services, and company information with professional branding and SEO optimization.",
       image: bookstoreImg,
-      technologies: ["React", "Corporate Website", "Health & Wellness"],
-      liveUrl: "#",
+      technologies: ["React", "Corporate Website", "Health & Wellness", "SEO"],
+      liveUrl: "https://mexividausa.com/",
       githubUrl: "#"
     },
     {
       title: "Care at Home",
-      description: "Healthcare service platform connecting patients with home care providers.",
+      description: "Healthcare service platform connecting patients with professional home care providers, featuring service booking, provider profiles, and care management.",
       image: ecommerceImg,
-      technologies: ["React", "Healthcare", "Service Platform", "Booking"],
-      liveUrl: "#",
+      technologies: ["React", "Healthcare Platform", "Service Booking", "Provider Management"],
+      liveUrl: "https://ccareathome.com/",
       githubUrl: "#"
     }
   ];
@@ -103,6 +104,8 @@ const Projects = () => {
                 <div className="flex gap-3">
                   <a
                     href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center text-primary hover:text-accent-red transition-colors text-sm font-medium"
                   >
                     <ExternalLink className="w-4 h-4 mr-1" />
