@@ -45,7 +45,10 @@ const Hero = () => {
               <img
                 src={heroPortrait}
                 alt="Muhammad Qasim - Software Developer"
-                className="relative w-80 h-80 rounded-full object-cover shadow-hero border-4 border-white"
+                className="relative w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white"
+                style={{
+                  boxShadow: '0 20px 40px -12px hsl(214 100% 47% / 0.25), 0 8px 16px -8px hsl(214 100% 47% / 0.3)'
+                }}
               />
               {/* Floating decoration */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-primary to-accent-red rounded-full animate-pulse"></div>
